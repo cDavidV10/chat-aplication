@@ -25,6 +25,8 @@ socket.on("messages", (mgs, userSave) => {
     
   `;
   $messages.insertAdjacentHTML("beforeend", item);
+
+  $messages.scrollTop = $messages.scrollHeight;
 });
 
 async function userSession() {
