@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>login</title>
+    <script src="./js/login.js" defer type="module"></script>
+  </head>
+  <body>
+    <section class="login-container">
+      <article class="container-form">
+        <div class="sing-in">
+          <h2>Inicar Sesion</h2>
+          <form method="post" id="sing-in">
+            <label for=""> Nombre de Usuario </label>
+            <input
+              type="text"
+              placeholder="nombre de usuario"
+              id="username"
+              autocomplete="off"
+              name="username"
+            />
+            <label for=""> Contraseña </label>
+            <input
+              type="password"
+              placeholder="contraseña"
+              autocomplete="off"
+              name="password"
+            />
+            <button>Iniciar Sesion</button>
+          </form>
+          <p class="message-error">
+            El Usuario y/o la contraseña son incorrectas
+          </p>
+        </div>
+      </article>
+      <article class="container-form">
+        <div class="sing-up">
+          <h2>Registrarse</h2>
+          <form action="" id="sing-up">
+            <label for=""> Nombre de Usuario </label>
+            <input
+              type="text"
+              placeholder="usuario"
+              name="username"
+              autocomplete="off"
+            />
+            <label for=""> Contraseña </label>
+            <input type="password" placeholder="contraseña" name="password" />
+            <label for=""> Repetir Contraseña </label>
+            <input
+              type="password"
+              placeholder="contraseña"
+              name="confirmPassword"
+            />
+            <button>Registrarse</button>
+          </form>
+          <p class="message-error">
+            El Usuario y/o la contraseña son incorrectas
+          </p>
+        </div>
+      </article>
+
+      <section class="mask">
+        <article class="messages messages-sing-in">
+          <h3>Hola</h3>
+          <p>Registrate para poder disfrutar del sistema</p>
+          <button id="btnIniciar">Ya tienes una cuenta</button>
+        </article>
+        <article class="messages messages-sing-up">
+          <h3>Bienvenido</h3>
+          <p>Ingrese su informacion para poder disfrutar del sistema</p>
+          <button id="btnCrear">Crear Cuenta</button>
+        </article>
+      </section>
+    </section>
+  </body>
+</html>
